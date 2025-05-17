@@ -1,0 +1,99 @@
+/* .header_outer_container {
+    position:sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    background-color: transparent;
+    height: 10vh;
+    color: white;
+    transition: all 0.5s;
+    transition-timing-function: ease-in;
+    z-index: 1;
+    background-color: red;
+}
+ 
+.header_container {
+    width: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .header_left ul,
+ .header_right ul {
+     list-style: none;
+     display: flex;
+     padding: 0;
+     margin: 0;
+     gap: 15px;
+ } */
+
+/* Outer wrapper to fix the header on top */
+.header_outer_container {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #111;
+    z-index: 10;
+    padding: 0 40px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+/* Inner container to hold left and right sections */
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Left section with logo and nav links */
+.header_left {
+    display: flex;
+    align-items: center;
+}
+
+.header_left ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.header_left li {
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.header_left img {
+    height: 25px;
+    margin-right: 10px;
+}
+
+/* Right section with icons and avatar */
+.header_right {
+    display: flex;
+    align-items: center;
+}
+
+.header_right ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.header_right li {
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
