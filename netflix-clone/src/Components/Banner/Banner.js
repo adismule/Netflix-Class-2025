@@ -4,19 +4,19 @@ import axios from '../../utils/axios';
 import requests from '../../utils/Requests';
 
  const Banner = () => {
-    const {movie, setMovie} = useState({});
+    const [movie, setMovie] = useState({});
     useEffect(() => {
-        (async) => {
-            try {
+        (async () => {
+            try{
                 const request = await axios.get(requests.fetchNetflixOriginals)
-                setMovie(request.data.results.[Math.floor(Math.random)() * request.data.results.length)   
+                console.log(request)
+                setMovie(request.data.results[Math.floor(Math.random() *request.data.results.length)
                 ]);
-                catch (error) {
-                    console.log(`error`, error);
-                }
-            }
-        }
-    })
+            } catch (error) {
+                console.log(`error`, error)
+            }    
+        })()
+    }, []);
   return (
     <div className='banner' style={{
         backgroundSize: 'cover',
