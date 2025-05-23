@@ -1,12 +1,13 @@
-import React from 'react'
-import Header from './Components/Header/Header'
+// src/App.jsx
+import React from 'react';
+import Header from './Components/Header/Header';
 
 function App() {
   return (
-    <>
-      <Header/>
-    </>
-  )
+    <div>
+      <Header />
+    </div>
+  );
 }
 
-export default App
+export default App;
